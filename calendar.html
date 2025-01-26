@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="ct-calendar-container">
+        <div id="calendar" class="calendar">
+            <div class="calendar-header">
+                <div class="group-month">
+                    <span id="currentMonth"></span>
+                    <div class="groupArrowMonth">
+                        <div id="prevMonth"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div id="nextMonth"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                    <div class="group-dropdown">
+                        <div id="monthDropdown" class="month-display">January <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div id="modalOptionMonth" class="custom-dropdown" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-days">
+                    <!-- Tên các ngày trong tuần -->
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-dates">
+                    <!-- Ngày trong tháng sẽ được thêm bằng jQuery -->
+                </div>
+            </div>
+            <div class="calendar-footer">
+
+            </div>
+        </div>
+        <div class="group-event-content">
+            <h2 class="title-event">ANNUAL EVENTS</h2>
+            <div class="event-content"></div>
+        </div>
+    </div>
+
+    <div id="eventPopup">
+        <div class="popup-overlay"></div> <!-- Vùng nhấp ra ngoài để đóng -->
+        <div class="popup-content">
+            <button class="close-popup"><i class="fa-solid fa-xmark"></i></button> <!-- Nút đóng popup -->
+            <div id="popupDescription"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script defer src="./script.js"></script>
+<script defer src="https://kit.fontawesome.com/9a811ce03d.js" crossorigin="anonymous"></script>
