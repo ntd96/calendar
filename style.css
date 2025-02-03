@@ -1,10 +1,7 @@
-body {
-    background-color: #492011;
-    height: 100%;
-}
-
 /* Global */
-
+body {
+	font-family: 'Raleway';
+}
 
 .ct-calendar-container {
     max-width: 1440px;
@@ -52,6 +49,14 @@ body {
     overflow: auto;
     box-sizing: border-box;
     max-height: 400px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 0.5s ease; 
+	font-family: 'Calibri';
+}
+.ct-calendar-container .event-content.active {
+    opacity: 1;
+    transform: translateY(0); /* Trả về vị trí ban đầu */
 }
 
 /* Thiết kế cho mục calendar */
@@ -67,11 +72,11 @@ body {
 }
 
 .ct-calendar-container .calendar-header .group-month #currentMonth {
-    color: #8EA763;
-    font-weight: 700;
+    color: #D88A36;
+    font-weight: 600;
     width: 30%;
     text-align: center;
-    font-size: 22px;
+    font-size: 36px;
 }
 
 .ct-calendar-container .calendar-header .groupArrowMonth {
@@ -83,9 +88,14 @@ body {
 .ct-calendar-container .calendar-header #prevMonth,
 .ct-calendar-container .calendar-header #nextMonth {
     background-color: #E6E9EE;
-    padding: 5px 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border: 1px solid #cccccc52;
+	cursor: pointer;
 }
 
 .ct-calendar-container .calendar-body .calendar-days {
@@ -93,6 +103,8 @@ body {
     justify-content: space-around;
     margin-bottom: 20px;
     font-weight: 700;
+	color: #5F5F5F;
+	font-family: 'Calibri';
 }
 
 .ct-calendar-container .calendar-days,
@@ -162,7 +174,7 @@ body {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 15px;
-    max-width: 110px;
+    max-width: 150px;
     margin-top: 5px;
     z-index: 10;
     width: 100%;
@@ -200,7 +212,7 @@ body {
 .ct-calendar-container .event-content .event-body-item {
     display: grid;
     padding: 15px 0;
-    grid-template-columns: 4% 30% 21% 10% 20% 8%;
+    grid-template-columns: 3% 39% 14% 9% 20% 8%;
     align-items: center;
     justify-items: start;
     column-gap: 8px;
@@ -208,19 +220,23 @@ body {
 
 .ct-calendar-container .event-content .event-body-item .line {
     width: 3px;
-    height: 45px;
+    height: 100%;
     border-radius: 50px;
     margin: 0 5px;
 }
 
 .ct-calendar-container .view-details {
-    padding: 5px 10px;
     background-color: #f8f8f8;
     border: 1px solid #cccccc52;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     font-size: 14px;
     margin: auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ct-calendar-container .event-content .event-body-item .label {
@@ -232,17 +248,18 @@ body {
 .ct-calendar-container .event-content .event-body-item p {
     margin: 0;
 }
-
+.ct-calendar-container .event-content .event-body-item .title {
+    padding-right: 10px;
+}
 
 .ct-calendar-container .has-event {
-    font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
 }
 
 .ct-calendar-container .no-event {
-    font-weight: 600;
-    color: #93939396;
+    font-weight: 400;
+    color: #d0d2d4;
 }
 
 /* Scroll side bar */
@@ -329,6 +346,16 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+/*  */
+.event-body-item.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px); /* Hiệu ứng từ dưới lên */
+}
+
+.event-body-item {
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Tăng hiệu ứng mượt */
+}
 
 @media screen and (max-width: 992px) {
     .ct-calendar-container {
@@ -350,7 +377,7 @@ body {
     }
 
     .ct-calendar-container .event-content .event-body-item {
-        grid-template-columns: 6% 41% 30% 17%;
+        grid-template-columns: 4% 45% 30% 17%;
     }
 
     .ct-calendar-container .title-event,
@@ -359,4 +386,41 @@ body {
     .calendar-body {
         display: none;
     }
+}
+@media screen and (max-width: 768px) {
+    .popup-content {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 468px ) {
+    .ct-calendar-container .calendar-header .group-month {
+        flex-wrap: wrap;
+    }
+    .ct-calendar-container .calendar-header .group-month #currentMonth {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ct-calendar-container .group-dropdown, .ct-calendar-container .calendar-header .groupArrowMonth {
+        width: 48%;
+    }
+    .ct-calendar-container .calendar-header .groupArrowMonth {
+        justify-content: center;
+    }
+    .ct-calendar-container .calendar {
+        background-size: contain;
+        padding: 35px 10px;
+    }
+    .ct-calendar-container .event-content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:306px) {
+    .ct-calendar-container .calendar-header .group-month {
+       justify-content: center;
+    }
+    .ct-calendar-container .calendar-header .groupArrowMonth {
+        margin-bottom: 10px;
+    }
+    
 }

@@ -17,62 +17,193 @@ jQuery(document).ready(function ($) {
     ];
 
     const events = [
-        { 
-            start_date: '1/15/2025', 
-            end_date: '1/24/2025', 
-            title: '4 Days Retreats', 
-            description: 'Mô tả sự kiện 1', 
-            color: '#F5A623',
-            time: '1pm - 3am',  // Thời gian sự kiện
-            fee: 150          // Giá sự kiện
+        {
+            start_date: '2/16/2025',
+            end_date: '2/16/2025',
+            title: 'First Full Moon of the Lunar New Year Ceremony',
+            description: 'First Full Moon of the Lunar New Year Ceremony',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
         },
-        { 
-            start_date: '1/15/2025', 
-            end_date: '1/17/2025', 
-            title: 'Awakened Luna New Year', 
-            description: 'Awakened Luna New Year', 
-            color: '#6A4FBD',
-            time: '9am - 5pm',
-            fee: 200
+        {
+            start_date: '2/25/2025',
+            end_date: '2/25/2025',
+            title: 'Awakened One Thich Thong Hoi Awakened Anniversary',
+            description: 'Awakened One Thich Thong Hoi Awakened Anniversary',
+            color: '#A7FFCB',
+            time: 'TBA',
+            fee: 'TBA'
         },
-        { 
-            start_date: '1/17/2025', 
-            end_date: '1/20/2025', 
-            title: 'Vietnamese Tet', 
-            description: 'Vietnamese Tet', 
-            color: '#D92B5C',
-            time: '10am - 2am',
-            fee: 250
+        {
+            start_date: '3/9/2025',
+            end_date: '3/9/2025',
+            title: ' Youth & Teens 1 Day Awakened Spring Retreat ',
+            description: ' Youth & Teens 1 Day Awakened Spring Retreat ',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
         },
-        { 
-            start_date: '2/7/2025', 
-            end_date: '2/9/2025', 
-            title: 'Sự kiện 2', 
-            description: 'Mô tả sự kiện 2', 
-            color: '#3F8A88',
-            time: '6pm - 10pm',
-            fee: 180
+
+        {
+            start_date: '3/27/2025',
+            end_date: '4/2/2025',
+            title: '7-Day Awakened Great Vow Retreat ',
+            description: '7-Day Awakened Great Vow Retreat ',
+            color: '#A7D8FF',
+            time: 'TBA',
+            fee: 'TBA'
         },
-        { 
-            start_date: '2/5/2025', 
-            end_date: '2/6/2025', 
-            title: 'Sự kiện 4', 
-            description: 'Mô tả sự kiện 4', 
-            color: '#9E2A2A',
-            time: '2pm - 8pm',
-            fee: 220
+
+        {
+            start_date: '3/30/2025',
+            end_date: '3/30/2025',
+            title: ' Universal Door Meditation Center Ground Breaking Ceremony',
+            description: ' Universal Door Meditation Center Ground Breaking Ceremony',
+            color: '#A7FFCB',
+            time: 'TBA',
+            fee: 'TBA'
         },
-        { 
-            start_date: '2/21/2025', 
-            end_date: '2/22/2025', 
-            title: 'Sự kiện 5', 
-            description: 'Mô tả sự kiện 5', 
-            color: '#F2C94C',
-            time: '8pm - 12am',
-            fee: 300
-        }
+
+        {
+            start_date: '4/8/2025',
+            end_date: '4/8/2025',
+            title: ' Awakened One Thich Dieu Thien Awakened Anniversary ',
+            description: 'Awakened One Thich Dieu Thien Awakened Anniversary ',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '5/4/2025',
+            end_date: '5/4/2025',
+            title: ' Buddha’s Birthday Celebration @ UDMC ',
+            description: ' Buddha’s Birthday Celebration @ UDMC ',
+            color: '#A7D8FF',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '5/18/2025',
+            end_date: '5/18/2025',
+            title: ' Buddha’s Birthday Celebration @ Suoi Tu ',
+            description: ' Buddha’s Birthday Celebration @ Suoi Tu',
+            color: '#A7FFCB',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '6/16/2025',
+            end_date: '6/20/2025',
+            title: 'Youth & Teen 5 Day Awakened Summer Retreat',
+            description: 'Youth & Teen 5 Day Awakened Summer Retreat',
+            color: '#A7D8FF',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+        {
+            start_date: '7/6/2025',
+            end_date: '7/12/2025',
+            title: '7 Day Monastic Awakened Sangha Retreat ',
+            description: '7 Day Monastic Awakened Sangha Retreat ',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '7/21/2025',
+            end_date: '7/25/2025',
+            title: '5 Day Adult + Youth & Teen Awakened Retreat ',
+            description: '5 Day Adult + Youth & Teen Awakened Retreat',
+            color: '#A7FFCB',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '8/20/2025',
+            end_date: '8/20/2025',
+            title: ' Awakened One Thich Dieu Thien Appeared in this World Celebration ',
+            description: ' Awakened One Thich Dieu Thien Appeared in this World Celebration ',
+            color: '#A7D8FF',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '8/30/2025',
+            end_date: '8/30/2025',
+            title: ' Filial Peity Ceremony at UDMC ',
+            description: ' Filial Peity Ceremony at UDMC ',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '9/14/2025',
+            end_date: '9/14/2025',
+            title: ' Filial Peity Ceremony at Suoi Tu ',
+            description: ' Filial Peity Ceremony at Suoi Tu ',
+            color: '#A7FFCB',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+        {
+            start_date: '10/3/2025',
+            end_date: '10/9/2025',
+            title: '7 Day Awakened Retreat for Adults ',
+            description: '7 Day Awakened Retreat for Adults ',
+            color: '#A7D8FF',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '11/3/2025',
+            end_date: '11/7/2025',
+            title: '5 Day Monastic Awakened Sangha Retreat ',
+            description: '5 Day Monastic Awakened Sangha Retreat ',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '11/23/2025',
+            end_date: '11/23/2025',
+            title: '1 Day Youth & Teen Awakened Gratitude Retreat ',
+            description: '1 Day Youth & Teen Awakened Gratitude Retreat',
+            color: '#A7FFCB',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '12/24/2025',
+            end_date: '12/24/2025',
+            title: ' Awakened One Thich Thong Hoi Appeared in this World Celebration ',
+            description: ' Awakened One Thich Thong Hoi Appeared in this World Celebration ',
+            color: '#A7D8FF',
+            time: 'TBA',
+            fee: 'TBA'
+        },
+
+        {
+            start_date: '12/26/2025',
+            end_date: '12/30/2025',
+            title: ' Youth & Teens 5 Day Awakened Winter Retreat ',
+            description: ' Youth & Teens 5 Day Awakened Winter Retreat ',
+            color: '#FFB3A7',
+            time: 'TBA',
+            fee: 'TBA'
+        },
     ];
-    
+
 
     function renderCalendar() {
         const day = date.getDate();
@@ -121,13 +252,17 @@ jQuery(document).ready(function ($) {
 
             const eventColor = matchedEvents ? matchedEvents.color : '';
             if (i === day && month === new Date().getMonth() && year === new Date().getFullYear()) {
-                $('.calendar-dates').append(`<div class="show-dates ${eventClass} current-date" style="background-color:${eventColor}">${i}</div>`);
-                // render ra day/month/year hiện tại
-                // $('.calendar-footer').html(`<p>${day}/${month + 1}/${year} </p>`);
+                const currentDateElement = $(`<div class="show-dates ${eventClass} current-date" style="background-color:${eventColor}">${i}</div>`);
+                $('.calendar-dates').append(currentDateElement);
+                currentDateElement.hide().fadeIn(500);
             } else {
-                $('.calendar-dates').append(`<div class="show-dates ${eventClass}" style="${eventStyle}">${i}</div>`);
+                const dateElement = $(`<div class="show-dates ${eventClass}" style="${eventStyle}">${i}</div>`);
+                $('.calendar-dates').append(dateElement);
+                dateElement.hide().fadeIn(500);
             }
+
         }
+
 
         // Tính số ô còn lại để thêm ngày tháng sau
         // 42 default từ 7 ngày thứ và 6 row của 30 31 ngày
@@ -241,7 +376,7 @@ jQuery(document).ready(function ($) {
         });
 
         const eventContentDiv = $('.event-content');
-        eventContentDiv.empty();
+        eventContentDiv.removeClass('active');
 
         let div = '';
         div += `
@@ -258,7 +393,7 @@ jQuery(document).ready(function ($) {
                     `${months[date.getMonth()].value.substring(0, 3)} ${date.getDate()}`;
 
                 div += `
-                        <div class="event-body-item">
+                        <div class="event-body-item" >
                             <div class="line" style="background-color:${event.color}"></div>
                             <div class="title">
                                 <p class="label">Title</p>
@@ -270,7 +405,7 @@ jQuery(document).ready(function ($) {
                             </div>
                             <div class="fee">
                                 <p class="label">Fee</p>
-                                <p>$${event.fee}</p>
+                                <p>${event.fee}</p>
                             </div>
                             <div class="date">
                                 <p class="label">Date</p>
@@ -281,10 +416,24 @@ jQuery(document).ready(function ($) {
                     
                 `
             })
+
         } else {
-            div += '<p>Không có sự kiện nào trong tháng này.</p>';
+            div += '<p>There are no events this month.</p>';
         }
-        eventContentDiv.html(div);
+
+        setTimeout(() => {
+            eventContentDiv.empty();
+            eventContentDiv.addClass('active');
+            eventContentDiv.html(div);
+            $('.ct-calendar-container .event-body-item').each(function (index) {
+                $(this).css({
+                    display: 'none', // Ẩn ban đầu
+                    position: 'relative', // Giữ vị trí
+                }).delay(index * 100)
+                    .slideDown(500) // Lướt xuống
+                    .animate({ opacity: 1 }, { queue: false, duration: 500 }); // Tăng dần độ trong suốt
+            });
+        }, 500);
     }
 
     // Xử lí sự kiện xem chi tiết
